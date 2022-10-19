@@ -5,7 +5,7 @@ body{
 }
 
 
-/* HACK: Top Header (Top Navbar)  */
+/* HACK: Top Navigation bar (Header) */
 header{
   background-color: #fff;
   display: flex;
@@ -79,7 +79,7 @@ header{
   border-radius: 10px;
 }
 
-/* HACK: Compaign selection area */
+/* HACK: Compaign Selection Area */
 
 .compaign{
   display: flex;
@@ -93,7 +93,7 @@ header{
   margin: 0;
 }
 
-/* HACK: Content Area */
+/* HACK: Revenue dashboard of the author. */
 
 .revenue-author, .performance-overview{
   display: flex;
@@ -210,16 +210,23 @@ header{
   margin: 5px 0;
 }
 
+.monthly-earnings h1 span{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px 0;
+  color: #50cd89;
+  background-color: #E8FFF3;
+  align-items: center;
+  border-radius: 5px;
+}
+
 .detailed-earnings{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.pie-chart{
-  flex-grow: 2
 }
 
 .detailed-earning-sources{
@@ -295,6 +302,7 @@ header{
 .hyperlinks{
   border-bottom: 1px dashed #eff2f5;
 }
+
 
 .highlights div p{
   color: #5e6278;
@@ -447,11 +455,68 @@ header{
   font-size: 12px;
 }
 
+/* HACK: Performance and Overview of authors performance overtime. */
+
+.overview div button[name="month"]{
+  background: #3498db;
+  background-color: #fff;
+  border: 0;
+  border-radius: 10px;
+  color: #181c32;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.overview div button[name="month"]:hover{
+  background: #3498db;
+  background-color: #f5f8fa;
+  border: 10px;
+  border-radius: 5px;
+  color: #181c32;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
 
 
 
 
-/* Left Navigation Bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HACK: Left Navigation Bar */
 .left-navbar{
   width: 265px;
   position: fixed;
