@@ -100,7 +100,7 @@ header{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 20px;
   gap: 20px;
 }
 
@@ -109,7 +109,7 @@ header{
   background-color: #fff;
   border-radius: 10px;
   padding: 10px 0;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   flex-grow: 2;
 }
 
@@ -121,7 +121,7 @@ header{
   min-width: 520px;
   border-radius: 10px;
   padding: 0;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   gap: 20px;
   flex-grow: 2;
 }
@@ -132,6 +132,7 @@ header{
   min-width: 520px;
   flex-wrap: wrap;
   gap: 20px;
+  flex-grow: 2;
 }
 
 .active{
@@ -141,7 +142,7 @@ header{
   background-image: url("resources/active-projects.png");
   padding: 10px;
   border-radius: 10px;
-  min-width: 350px;
+  min-width: 300px;
   flex-grow: 2;
 }
 
@@ -190,7 +191,7 @@ header{
   border-radius: 10px;
   padding: 10px;
   flex-grow: 2;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .monthly-earnings{
@@ -260,14 +261,16 @@ header{
 .links-highlights{
   display: flex;
   justify-content: space-between;
-  flex-flow: row;
+  flex-direction: row;
   gap: 20px;
+  flex-grow: 2;
+  flex-wrap: wrap;
 }
 
 .links{
   color: #181c32;
   background-color: #fff;
-  min-width: 260px;
+  min-width: 300px;
   border-radius: 10px;
   padding: 10px;
   flex-grow: 2;
