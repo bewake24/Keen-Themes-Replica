@@ -6,19 +6,20 @@
   <title>Sunya Group: Revenue Dashboard</title>
 
   <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/fc9718fcbe.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f2724b6fbf.js" crossorigin="anonymous"></script>
 
   <!-- Google fonts (Inter) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
   <!-- Top Navigation bar (Header)-->
-  <header>
+  <header class="flex-row">
     <div class="left-items">
       <p class="dashboard">Dashboard</p>
       <p class="pages">Pages</p>
@@ -29,22 +30,16 @@
 
     <div class="right-items">
       <img class="profile" src="resources/profile-pic.JPG" alt="P">
-      <!-- <p class="profile"><i class="fa-solid fa-user"></i></p> -->
-
-      <!-- <p class="theme"><i class="fa-solid fa-sun-bright"></i>0</p> -->
-      <img class="country" src="resources/country.svg.png" alt="C">
-      <!-- <p class="country"><i class="fa-solid fa-flag"></i></p> -->
-
+      <img class="country-icon" src="resources/country.svg.png" alt="C">
       <p class="message"><i class="fa-solid fa-message"></i></p>
-      <!-- <p class="notification"><i class="fa-solid fa-flower"></i></p> -->
       <p class="chart"><i class="fa-duotone fa-chart-simple"></i></p>
       <p class="search"><i class="fa-solid fa-magnifying-glass"></i></p>
     </div>
 
   </header>
 
-  <!-- Compaign Selector -->
-  <div class="compaign">
+  <!-- Compaign Selection Area -->
+  <section class="compaign flex-row">
     <div class="default">
       <h3>
         <bold>Default</bold>
@@ -55,21 +50,21 @@
     <div class="select-compaign">
       <input type="range" name="" value="">
     </div>
-  </div>
+  </section>
 
-  <!-- Content Area -->
-  <section id="content-area">
-    <div class="revenue-author">
+  <!-- Revenue dashboard of the author. -->
+  <section>
+    <div class="revenue-author parent flex-row">
       <div class="revenue">
         <div class="active-earning">
-          <div class="active">
+          <div class="active grandchild">
             <div class="active-numbers">
               <p class="numbers">69</p>
               <p>Active Projects in October</p>
             </div>
 
             <div class="active-level">
-              <div class="active-level-indicator">
+              <div class="active-level-indicator flex-row">
                 <p>43 Pending</p>
                 <p>72%</p>
               </div>
@@ -77,108 +72,97 @@
               <div class="">
                 <div class="full-indicator">
                   <div class="indicator">
-
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="earning">
-            <div class="monthly-earnings">
-              <h1>69,700</h1>
-              <p>Projects Earnings in October</p>
+          <div class="earning grandchild">
+            <div class="number-label-subheader">
+              <h3 class="number">₹59,700 <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>2.2%</span></h3>
+              <p class="subheader">Projects Earnings in October</p>
             </div>
 
-            <div class="detailed-earnings">
+            <div class="detailed-earnings flex-row">
               <div class="pie-chart">
                 <img src="resources/pie-chart.png" alt="">
               </div>
 
               <div class="detailed-earning-sources">
-                <div class="earning-sources">
+                <div class="earning-sources flex-row">
                   <p><i class="fa-solid fa-circle fa-icon-2"></i> Leaf CRM</p>
-                  <p><span>7,660</span></p>
+                  <p><span>₹7,660</span></p>
                 </div>
 
-                <div class="earning-sources">
+                <div class="earning-sources flex-row">
                   <p><i class="fa-solid fa-circle fa-icon-3"></i> Mivy App</p>
-                  <p><span>2,820</span></p>
+                  <p><span>₹2,820</span></p>
                 </div>
 
-                <div class="earning-sources">
+                <div class="earning-sources flex-row">
                   <p><i class="fa-solid fa-circle fa-icon-4"></i> Others</p>
-                  <p><span>19,660</span></p>
+                  <p><span>₹19,660</span></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="links-highlights">
-          <div class="links">
-            <div class="links-bar">
+        <div class="links-highlights flex-row">
+          <div class="links grandchild">
+            <div class="links-bar flex-row">
               <h3>External Links</h3>
               <p><i class="fa-solid fa-ellipsis font-icon"></i></p>
             </div>
             <hr>
 
             <div class="">
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Avg. Client Ratings</p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
               </div>
 
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Instagram</p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
               </div>
 
-              <div class="links-bar">
+              <div class="links-bar flex-row">
                 <p>Google Ads CPC </p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
               </div>
             </div>
-
           </div>
 
-          <div class="highlights links">
-            <div class="links-bar">
+          <div class="highlights grandchild">
+            <div class="links-bar flex-row">
               <h3>Highlights</h3>
             </div>
             <hr>
 
             <div class="">
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Avg. Client Earnings</p>
-                <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
+                <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i>7.8<span>/10</span></p>
               </div>
 
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Avg. Quote</p>
-                <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
+                <p><i class="fa-solid fa-arrow-down-left"></i>730</p>
               </div>
 
-              <div class="links-bar">
+              <div class="links-bar flex-row">
                 <p>Avg. Agent Earnings</p>
-                <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
+                <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i>2,309</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-      <div class="author">
-        <div class="author-bar">
+      <div class="author child">
+        <div class="author-bar heading-subheading-icon flex-row">
           <div class="">
             <h3 class="auth">Authors Achievement</h3>
             <p class="auth auth-key-01">Avg 69.32% Conv. Rate</p>
@@ -214,7 +198,7 @@
         </div>
 
         <div class="author-data">
-          <div class="author-data-attributes attributes-name">
+          <div class="author-data-attributes attributes-name flex-row">
             <p class="a">AUTHOR</p>
             <p class="c">CONV.</p>
             <p class="ch">CHART</p>
@@ -223,7 +207,7 @@
         </div>
 
         <div class="">
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/white-woman.png" alt="pr">
@@ -248,7 +232,7 @@
             </div>
           </div>
 
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -273,7 +257,7 @@
             </div>
           </div>
 
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/adult.png" alt="pr">
@@ -298,7 +282,7 @@
             </div>
           </div>
 
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/male.png" alt="pr">
@@ -324,31 +308,539 @@
           </div>
         </div>
       </div>
-
     </div>
+  </section>
 
-    <div class="performance-overview">
-      <div class="overview">
-        <h1>Performance Overview here</h1>
+  <!-- Performance and Overview of authors performance overtime. -->
+  <section>
+    <div class="performance-overview parent flex-row">
+      <div class="overview child">
+          <div class="heading-subheading-icon flex-row">
+            <div class="">
+              <h3 class="heading">Performance Overview</h3>
+              <p class="heading-subheading">Authors from all channels.</p>
+            </div>
+
+            <div class="">
+              <button type="button" name="month">Month</button>
+              <button type="button" name="week">Week</button>
+            </div>
+          </div>
+
+          <div class="number-label-subheader">
+            <h3 class="number">₹855 <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>2.2%</span></h3>
+            <p class="subheader">Average cost per interaction</p>
+          </div>
+
       </div>
 
-      <div class="performance">
-        <h1>Performance curve here</h1>
+      <div class="performance child">
+          <div class="heading-subheading-icon flex-row">
+            <div class="">
+              <h3 class="heading">Performance</h3>
+              <p class="auth auth-key-01">1,046 Inbound calls today.</p>
+            </div>
+
+            <div class="">
+              <input type="date" name="" value="">
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </section>
+
+  <!-- Demographics according to Country, Networks and Ads  shown in this section-->
+  <section>
+    <div class="country-networks-ads parent flex-row">
+      <div class="country child">
+        <div class="heading-subheading-icon flex-row">
+          <div class="">
+            <h3 class="heading">Visit by country</h3>
+            <p class="heading-subheading">20 Countries share 97% visits</p>
+          </div>
+
+          <div class="">
+            <button type="button" name="month">View all</button>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="uplabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="downlabel"><i class="fa-regular fa-arrow-up"></i>2.7%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="uplabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="downlabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="uplabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="uplabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="networks child">
+        <div class="heading-subheading-icon flex-row">
+          <div class="number-label-subheader">
+            <h3 class="number">1,276 <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>2.2%</span></h3>
+            <p class="subheader">Visits by social networks.</p>
+          </div>
+
+          <div class="">
+            <p><i class="fa-solid fa-ellipsis font-icon"></i></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="uplabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="downlabel"><i class="fa-regular fa-arrow-up"></i>6.4%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="uplabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="downlabel"><i class="fa-regular fa-arrow-up"></i>4.9%</span></p>
+          </div>
+        </div>
+
+        <div class="table-like-structure flex-row">
+          <div class="user-profile">
+            <div class="">
+              <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
+            </div>
+
+            <div class="">
+              <p class="user-name">Jenny</p>
+              <p class="user-name user-location">New Jersey</p>
+            </div>
+          </div>
+
+          <div class="number-label">
+            <p>9,763<span class="uplabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ads child">
+        <div class="ads-header">
+          <h3>Analyse Your</h3>
+          <h3><span>Infrastructure</span> With Us</h3>
+          <button type="button" name="get-started">Get Started</button>
+        </div>
+
+        <div class="ads-image">
+          <img src="resources/ad.svg" alt="">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Left Navigation Bar -->
-  <!-- <section id="left-bar">
-    <div class="left-navbar">
-      <div class="left-navbar-header">
-        <p><i class="fa-brands fa-korvue"></i> Keen</p>
+  <!-- Average agent earning curve and Projects stats section -->
+  <section>
+    <div class="agent-project parent flex-row">
+      <div class="agent child">
+
+      </div>
+
+      <div class="project child">
+
+        <div class="heading-subheading-icon flex-row">
+          <div class="">
+            <h3 class="auth">Projects Stats</h3>
+            <p class="auth auth-key-01">Updated 22 minutes ago</p>
+          </div>
+
+          <div class="">
+            <button type="button" name="button">History</button>
+          </div>
+        </div>
+
+        <table class="table-data">
+          <thead>
+            <tr>
+              <th>ITEMS</th>
+              <th>BUDGET</th>
+              <th>PROGRESS</th>
+              <th>STATUS</th>
+              <th>CHART</th>
+              <th>VIEW</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <div class="user-profile">
+                  <div class="">
+                    <img class="user-profile-pic" src="https://i.pinimg.com/736x/87/d0/18/87d018877a81e302975aff77aee98d5a.jpg" alt="pr">
+                  </div>
+
+                  <div class="">
+                    <p class="user-name">Blogfish</p>
+                    <p class="user-name user-location">Dan Williams</p>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <p>₹12,365</p>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="downlabel"><i class="fa-regular fa-arrow-up"></i>3.8%</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="status-hold"><i class="fa-regular fa-arrow-up"></i> On hold</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="author-chart">
+                  <img src="https://www.kindpng.com/picc/m/196-1962768_icon-hd-png-download.png" alt="ch">
+                </div>
+              </td>
+
+              <td>
+                <div class="author-view">
+                  <p><i class="fa-solid fa-arrow-right font-icon"></i></p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="user-profile">
+                  <div class="">
+                    <img class="user-profile-pic" src="https://i0.wp.com/yukaichou.com/wp-content/uploads/2014/04/Temple-Run-Logo.png?fit=600%2C600&ssl=1" alt="pr">
+                  </div>
+
+                  <div class="">
+                    <p class="user-name">Temple Run</p>
+                    <p class="user-name user-location">Robbie Finch</p>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <p>₹6,424</p>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>4.9%</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="status-process"><i class="fa-regular fa-arrow-up"></i> In Process</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="author-chart">
+                  <img src="https://www.kindpng.com/picc/m/196-1962768_icon-hd-png-download.png" alt="ch">
+                </div>
+              </td>
+
+              <td>
+                <div class="author-view">
+                  <p><i class="fa-solid fa-arrow-right font-icon"></i></p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="user-profile">
+                  <div class="">
+                    <img class="user-profile-pic" src="https://store-images.microsoft.com/image/apps.41935.9007199266244237.5818d65e-20b9-4ef8-9b03-260b26c1f348.3654212a-edc0-42cf-aa02-762e8b9a02eb?w=162&h=162&q=90&mode=crop" alt="pr">
+                  </div>
+
+                  <div class="">
+                    <p class="user-name">Cricker 20</p>
+                    <p class="user-name user-location">Nob Lauret</p>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <p>₹48,567</p>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>7.9%</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="status-completed"><i class="fa-regular fa-arrow-up"></i> Completed</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="author-chart">
+                  <img src="https://www.kindpng.com/picc/m/196-1962768_icon-hd-png-download.png" alt="ch">
+                </div>
+              </td>
+
+              <td>
+                <div class="author-view">
+                  <p><i class="fa-solid fa-arrow-right font-icon"></i></p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="user-profile">
+                  <div class="">
+                    <img class="user-profile-pic" src="https://static.vecteezy.com/system/resources/previews/005/076/592/original/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg" alt="pr">
+                  </div>
+
+                  <div class="">
+                    <p class="user-name">Thor Sim</p>
+                    <p class="user-name user-location">Alex Bari</p>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <p>₹13,479</p>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="downlabel"><i class="fa-regular fa-arrow-up"></i>12.5%</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="status-process"><i class="fa-regular fa-arrow-up"></i> In Process</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="author-chart">
+                  <img src="https://www.kindpng.com/picc/m/196-1962768_icon-hd-png-download.png" alt="ch">
+                </div>
+              </td>
+
+              <td>
+                <div class="author-view">
+                  <p><i class="fa-solid fa-arrow-right font-icon"></i></p>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="user-profile">
+                  <div class="">
+                    <img class="user-profile-pic" src="https://preview.keenthemes.com/keen/demo1/assets/media/stock/600x600/img-49.jpg" alt="pr">
+                  </div>
+
+                  <div class="">
+                    <p class="user-name">Nope Gem</p>
+                    <p class="user-name user-location">Manu Warne</p>
+                  </div>
+                </div>
+              </td>
+
+              <td>
+                <p>₹32,427</p>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>1.9%</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="number-label">
+                  <span class="status-completed"><i class="fa-regular fa-arrow-up"></i> Completed</span>
+                </div>
+              </td>
+
+              <td>
+                <div class="author-chart">
+                  <img src="https://www.kindpng.com/picc/m/196-1962768_icon-hd-png-download.png" alt="ch">
+                </div>
+              </td>
+
+              <td>
+                <div class="author-view">
+                  <p><i class="fa-solid fa-arrow-right font-icon"></i></p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </section> -->
+  </section>
 
-
-
+  <footer class="parent flex-row">
+    <p class="">Designed by <span>Vivek Kumar</span></p>
+    <div class="">
+      <p>About</p>
+      <p>Support</p>
+      <p>Purchase</p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -5,33 +5,57 @@ body{
 }
 
 
-/* HACK: Top Header (Top Navbar)  */
-header{
+/* HACK: PARENT --> CHILD --> GRANDCHILD --> GREAT-GRANDCHILD */
+.parent{
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.child{
   background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 16px;
+  flex-grow: 2;
+  margin: 10px;
+}
+.grandchild{
+  color: #181c32;
+  border-radius: 10px;
+  flex-grow: 2;
+  min-width: 300px;
+  padding: 10px;
+}
+
+
+/* HACK: FLEX-ROW & FLEX COLUMN : for diffrent flex-wraps*/
+.flex-row{
   display: flex;
   flex-direction: row;
-  height:70px;
   justify-content: space-between;
+}
+
+
+/* HACK: Top Navigation bar (Header) */
+header{
+  background-color: #fff;
+  height:70px;
   font-size: 16px;
   margin: 0;
   padding: 0 20px;
 }
 
+
 /* Hyperlinks in left of the navbar */
 .left-items{
   display: flex;
   flex-direction: row;
-  /* padding: 10px; */
   align-items: center;
 }
-
 .left-items p{
   margin-right: 20px;
   color:  #3f5254;
   padding: 10px 13px;
   border-radius: 10px;
 }
-
 .left-items p:hover, .dashboard{
   margin-right: 20px;
   color: #3e97ff;  /* font color of .dashboard class is not changing?????*/
@@ -47,7 +71,6 @@ header{
   padding: 10px;
   align-items: center;
 }
-
 .right-items img{
   width: 40px;
   height: 40px;
@@ -55,22 +78,19 @@ header{
   border-radius: 5px;
   margin-left: 20px;
 }
-
-.country{
+.country-icon{
   width: 20px;
   height: 20px;
   background-color: #3e97ff;
   border-radius: 5px;
   margin-left: 20px;
 }
-
 .right-items p{
   margin-right: 20px;
   color:  #3f5254;
   padding: 10px 13px;
   border-radius: 10px;
 }
-
 .right-items p:hover{
   margin-right: 20px;
   color: #3e97ff;
@@ -79,174 +99,101 @@ header{
   border-radius: 10px;
 }
 
-/* HACK: Compaign selection area */
-
+/* HACK: Compaign Selection Area */
 .compaign{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 10px 20px;
   margin: 0;
 }
-
 .default h3, .default p{
   margin: 0;
 }
 
-/* HACK: Content Area */
 
-.revenue-author, .performance-overview{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
+/* HACK: Revenue dashboard of the author. */
 .author{
   min-width: 520px;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 10px 0;
-  margin: 0 10px;
-  flex-grow: 2;
 }
-
 .revenue{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #f5f8fa;
   min-width: 520px;
-  border-radius: 10px;
+  gap: 20px;
   padding: 0;
-  margin: 0 10px;
+  border-radius: 10px;
   flex-grow: 2;
+  margin: 10px;
 }
-
 .active-earning{
   display: flex;
   flex-direction: row;
   min-width: 520px;
   flex-wrap: wrap;
+  gap: 20px;
+  flex-grow: 2;
 }
-
 .active{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url("resources/active-projects.png");
-  padding: 10px;
-  margin-right: 20px;
-  border-radius: 10px;
-  min-width: 250px;
-  flex-grow: 2;
 }
-
 .active-numbers p{
   color: #fff;
   margin: 5px;
 }
-
 .numbers{
   font-size: 30px;
   font-weight: bold;
   margin: 5px;
 }
-
 .active-level{
   margin-bottom: 5px;
 }
-
-.active-level-indicator{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
-
 .active-level-indicator p{
   color: #fff;
 }
-
 .full-indicator{
   width: 100%;
   height: 8px;
   background-color: #5061ff;
   border-radius: 20px;
 }
-
 .indicator{
   width: 72%;
   height: 8px;
   background-color: #fff;
   border-radius: 20px;
 }
-
-
 .earning{
   background-color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  flex-grow: 2;
-  min-width: 250px;
 }
-
-.monthly-earnings{
-  color: #000;
-  align-items: center;
-}
-
-.monthly-earnings p{
-  color: #b5b5c3;
-  margin: 5px;
-}
-
-.monthly-earnings h1{
-  font-size: 32px;
-  font-weight: 600;
-  margin: 5px 0;
-}
-
 .detailed-earnings{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-
-.pie-chart{
-  flex-grow: 2
-}
-
 .detailed-earning-sources{
   flex-grow: 3;
 }
-
 .earning-sources{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
   flex-grow: 2;
 }
-
 .earning-sources p span{
   color: #5e6278;
   font-weight: 600;
 }
-
 .fa-icon-2{
   color: #50cd89;
   margin-right: 5px;
   flex-grow: 2;
 }
-
 .fa-icon-3{
   color: #3e97ff;
   margin-right: 5px;
   flex-grow: 2;
 }
-
 .fa-icon-4{
   color: #e4e6ef;
   margin-right: 5px;
@@ -254,69 +201,40 @@ header{
 }
 
 /* HACK: External Links Section */
-
 .links-highlights{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
+  gap: 20px;
+  flex-grow: 2;
+  flex-wrap: wrap;
 }
-
 .links{
   color: #181c32;
   background-color: #fff;
-  min-width: 260px;
-  border-radius: 10px;
-  padding: 10px;
-  flex-grow: 2;
 }
-
-.links-bar{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
-}
-
 .links-bar h3, .links-bar p{
   margin: 5px;
 }
-
 .links hr{
   border: 1px solid #fff;
   margin: 5px;
 }
-
-
 .hyperlinks{
   border-bottom: 1px dashed #eff2f5;
 }
 
+.highlights{
+  background-color: #fff;
+}
 .highlights div p{
   color: #5e6278;
 }
 
+.highlights hr{
+  border: 1px solid #fff;
+  margin: 5px;
+}
 .highlights div p i{
   color: #181c32;
 }
-
-
-
-
-
-
-
-
-.author-bar{
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  height:70px;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  margin: 0;
-  padding: 0 20px;
-}
-
 .auth{
   margin: 5px;
 }
@@ -326,12 +244,11 @@ header{
 }
 
 .font-icon{
-  color: b5b5c3;
+  color: #b5b5c3;
   padding: 5px;
   border-radius: 5px;
   background-color: #f5f8fa;
 }
-
 .font-icon:hover{
   color: #fff;
   padding: 5px;
@@ -344,9 +261,7 @@ header{
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 20px;
 }
-
 .saas{
   border: solid;
   border-width: 1px 1px 5px 1px;
@@ -357,11 +272,9 @@ header{
   margin-right: 10px;
   color:  #3e97ff;
 }
-
 .saas h4, .saas h1{
   margin: 5px;
 }
-
 .achievement-type-rest{
   border: 1px dashed #e4e6ef;
   border-radius: 10px;
@@ -369,26 +282,17 @@ header{
   text-align: center;
   margin-right: 10px;
 }
-
 .achievement-type-rest h4, .achievement-type-rest h1{
   margin: 5px;
 }
-
 .achievement-type-rest:hover{
-  /* border: solid;            for active
-  border-width: 1px 1px 5px 1px;
-  border-color: #e4e6ef #e4e6ef #3e97ff #e4e6ef; */
   color:  #3e97ff;
 }
-
 .author-data-attributes{
-  display: flex;
-  flex-direction: row;
-  /* padding: 10px; */
   align-items: center;
-  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px dashed #eff2f5;
 }
-
 .attributes-name p{
   color: #b5b5c3;
 }
@@ -407,10 +311,8 @@ header{
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
   flex-grow: 4;
 }
-
 .author-profile-pic{
   width: 40px;
   height: 40px;
@@ -418,7 +320,6 @@ header{
   border-radius: 5px;
   margin-right: 7px;
 }
-
 .author-conv{
   flex-grow: 3;
 }
@@ -429,54 +330,220 @@ header{
   width: 80px;
   height: 40px;
 }
-
-.author-data-attributes{
-  margin: 0;
-  padding: 0 20px;
-  border-bottom: 1px dashed #eff2f5;
-}
-
 .auth-location{
   color: #b5b5c3;
   font-size: 12px;
 }
 
 
-
-
-
-/* Left Navigation Bar */
-.left-navbar{
-  width: 265px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #181c32;
+/* HACK: Performance and Overview of authors performance overtime. */
+ .heading-subheading-icon div button{
+  background-color: #f5f8fa;
+  border: 0;
+  border-radius: 10px;
+  color: #181c32;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.left-navbar-header{
-  word-spacing: 0;
-  height: 70px;
-  border-bottom: 1px dashed #33446c;
-  padding: 0 20px 0 20px;
-  min-height: auto;
-  min-width: auto;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+
+/* HACK: Demographics according to Country, Networks and Ads  shown in this section */
+.country-networks-ads{
+  flex-wrap: wrap;
+}
+.number-label p{
+  color: #181c32;
+  font-weight: 500;
+}
+.ads{
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("resources/ads-background.png");
+  background-size: 100% 100%; /* Helps in adding background image without repeating.  */
+}
+.ads-header {
+  text-align: center;
+}
+.ads-header h3{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 5px 0;
+  color: #fff;
+}
+.ads-header h3 span{
+  color: #50cd89;
+  text-decoration: underline;
+  text-decoration-color: #50cd89;
+  cursor: pointer;
   transform: none;
-  transition: all 0s ease 0s;
-  background-color: grey;
+  transition: color 0.2 ease 0s;
+}
+.ads-header  button{
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: green;
+}
+.ads-image{
+  display: flex;
+  justify-content: center;
+}
+.ads-image img{
+  width: auto;
+  height: 220px;
+  border-radius: 10px;
 }
 
-.left-navbar-header p{
-  vertical-align: middle;
-  color: white;
-  font-size: 13px;
-  line-height: 19.5px;
-  text-decoration: none solid rgb(24, 28, 50);
+
+
+table{
+  text-align: center;
+  width: 100%;
+}
+table thead tr th{
+  color: #b5b5c3;
+  font-size: 16px;
+  font-weight: 600;
+}
+table thead tr th:first-child{
+  text-align: left;
+}
+table thead tr th:last-child{
+  text-align: right;
+}
+table tbody tr td{
+  border-bottom: 1px dashed #eff2f5;
+}
+table tbody tr td:first-child{
+  text-align: left;
+}
+table tbody tr td:last-child{
+  text-align: right;
+}
+
+
+footer{
+  background-color: #fff;
+  min-height: 60px;
+  align-items: center;
+}
+footer div{
+  display: flex;
+  gap: 20px;
+}
+footer div p:hover{
+  color: #3e97ff;
+}
+
+
+/* HACK: CSS tempelates for this website. */
+
+
+/* 1.)  Tempelate for navbar in small cards: Author-bar, earning-bar, author-achievement, performance-overview, performance */
+.heading-subheading-icon{
+  background-color: #fff;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding: 0;
+}
+.heading{
+  margin: 5px;
+}
+.heading-subheading{
+  color: #b5b5c3;
+  margin: 5px;
+}
+.font-icon{
+  color: #b5b5c3;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f5f8fa;
+}
+
+
+/* 2.) Number Label and subheader */
+    /* Used in monthly-earnings, performance-overview, social-networks, avg-agent-earnings */
+.number-label-subheader{
+  color: #000;
+  align-items: center;
+}
+.subheader{
+  color: #b5b5c3;
+  margin: 5px;
+}
+.number{
+  font-size: 48px;
+  font-weight: 600;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.uplabel, .status-completed{ /*This label Icon is also used in social-networks, country-visits, and project-stats  */
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #50cd89;
+  background-color: #E8FFF3;
+  border-radius: 5px;
+}
+.downlabel{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #f1416c;
+  background-color: #fff5f8;
+  border-radius: 5px;
+}
+.status-process{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #3e97ff;
+  background-color: #eef6ff;
+  border-radius: 5px;
+}
+.status-hold{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #ffc700;
+  background-color: #fff8dd;
+  border-radius: 5px;
+}
+
+
+/* 3.) Table like structure pic-name-location label  */
+    /* Used in Authors achievements, visit by country, visit by social networks and projects stats. */
+.table-like-structure{
+  align-items: center;
+  margin: 0;
+  border-bottom: 1px dashed #eff2f5;
+}
+.user-profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 4;
+}
+.user-profile-pic{
+  width: 40px;
+  height: 40px;
+  background-color: #3e97ff;
+  border-radius: 5px;
+  margin-right: 7px;
+}
+.user-name{
+  margin: 5px;
+}
+.user-location{
+  color: #b5b5c3;
+  font-size: 12px;
 }
