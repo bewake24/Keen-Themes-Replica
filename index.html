@@ -18,9 +18,11 @@
 </head>
 
 <body>
+  <div class="content-area">
 
+  </div>
   <!-- Top Navigation bar (Header)-->
-  <header>
+  <header class="flex-row">
     <div class="left-items">
       <p class="dashboard">Dashboard</p>
       <p class="pages">Pages</p>
@@ -40,7 +42,7 @@
   </header>
 
   <!-- Compaign Selection Area -->
-  <section class="compaign">
+  <section class="compaign flex-row">
     <div class="default">
       <h3>
         <bold>Default</bold>
@@ -55,17 +57,17 @@
 
   <!-- Revenue dashboard of the author. -->
   <section>
-    <div class="revenue-author parent">
+    <div class="revenue-author parent flex-row">
       <div class="revenue">
         <div class="active-earning">
-          <div class="active">
+          <div class="active grandchild">
             <div class="active-numbers">
               <p class="numbers">69</p>
               <p>Active Projects in October</p>
             </div>
 
             <div class="active-level">
-              <div class="active-level-indicator">
+              <div class="active-level-indicator flex-row">
                 <p>43 Pending</p>
                 <p>72%</p>
               </div>
@@ -79,29 +81,29 @@
             </div>
           </div>
 
-          <div class="earning">
+          <div class="earning grandchild">
             <div class="number-label-subheader">
               <h3 class="number">₹59,700 <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>2.2%</span></h3>
               <p class="subheader">Projects Earnings in October</p>
             </div>
 
-            <div class="detailed-earnings">
+            <div class="detailed-earnings flex-row">
               <div class="pie-chart">
                 <img src="resources/pie-chart.png" alt="">
               </div>
 
               <div class="detailed-earning-sources">
-                <div class="earning-sources">
+                <div class="earning-sources flex-row">
                   <p><i class="fa-solid fa-circle fa-icon-2"></i> Leaf CRM</p>
                   <p><span>₹7,660</span></p>
                 </div>
 
-                <div class="earning-sources">
+                <div class="earning-sources flex-row">
                   <p><i class="fa-solid fa-circle fa-icon-3"></i> Mivy App</p>
                   <p><span>₹2,820</span></p>
                 </div>
 
-                <div class="earning-sources">
+                <div class="earning-sources flex-row">
                   <p><i class="fa-solid fa-circle fa-icon-4"></i> Others</p>
                   <p><span>₹19,660</span></p>
                 </div>
@@ -110,26 +112,26 @@
           </div>
         </div>
 
-        <div class="links-highlights">
-          <div class="links">
-            <div class="links-bar">
+        <div class="links-highlights flex-row">
+          <div class="links grandchild">
+            <div class="links-bar flex-row">
               <h3>External Links</h3>
               <p><i class="fa-solid fa-ellipsis font-icon"></i></p>
             </div>
             <hr>
 
             <div class="">
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Avg. Client Ratings</p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
               </div>
 
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Instagram</p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
               </div>
 
-              <div class="links-bar">
+              <div class="links-bar flex-row">
                 <p>Google Ads CPC </p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i></p>
               </div>
@@ -137,24 +139,24 @@
 
           </div>
 
-          <div class="highlights links">
-            <div class="links-bar">
+          <div class="highlights grandchild">
+            <div class="links-bar flex-row">
               <h3>Highlights</h3>
             </div>
             <hr>
 
             <div class="">
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Avg. Client Earnings</p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i>7.8<span>/10</span></p>
               </div>
 
-              <div class="links-bar hyperlinks">
+              <div class="links-bar flex-row hyperlinks">
                 <p>Avg. Quote</p>
                 <p><i class="fa-solid fa-arrow-down-left"></i>730</p>
               </div>
 
-              <div class="links-bar">
+              <div class="links-bar flex-row">
                 <p>Avg. Agent Earnings</p>
                 <p><i class="fa-regular fa-arrow-up-right-from-square font-icon"></i>2,309</p>
               </div>
@@ -163,8 +165,8 @@
         </div>
       </div>
 
-      <div class="author">
-        <div class="author-bar">
+      <div class="author child">
+        <div class="author-bar heading-subheading-icon flex-row">
           <div class="">
             <h3 class="auth">Authors Achievement</h3>
             <p class="auth auth-key-01">Avg 69.32% Conv. Rate</p>
@@ -200,7 +202,7 @@
         </div>
 
         <div class="author-data">
-          <div class="author-data-attributes attributes-name">
+          <div class="author-data-attributes attributes-name flex-row">
             <p class="a">AUTHOR</p>
             <p class="c">CONV.</p>
             <p class="ch">CHART</p>
@@ -209,7 +211,7 @@
         </div>
 
         <div class="">
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/white-woman.png" alt="pr">
@@ -234,7 +236,7 @@
             </div>
           </div>
 
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -259,7 +261,7 @@
             </div>
           </div>
 
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/adult.png" alt="pr">
@@ -284,7 +286,7 @@
             </div>
           </div>
 
-          <div class="author-data-attributes">
+          <div class="author-data-attributes flex-row">
             <div class="author-profile">
               <div class="">
                 <img class="author-profile-pic" src="https://static.generated.photos/vue-static/home/feed/male.png" alt="pr">
@@ -316,9 +318,9 @@
 
   <!-- Performance and Overview of authors performance overtime. -->
   <section>
-    <div class="performance-overview">
-      <div class="overview">
-          <div class="heading-subheading-icon">
+    <div class="performance-overview parent flex-row">
+      <div class="overview child">
+          <div class="heading-subheading-icon flex-row">
             <div class="">
               <h3 class="heading">Performance Overview</h3>
               <p class="heading-subheading">Authors from all channels.</p>
@@ -337,8 +339,8 @@
 
       </div>
 
-      <div class="performance">
-          <div class="heading-subheading-icon">
+      <div class="performance child">
+          <div class="heading-subheading-icon flex-row">
             <div class="">
               <h3 class="heading">Performance</h3>
               <p class="auth auth-key-01">1,046 Inbound calls today.</p>
@@ -355,9 +357,9 @@
 
   <!-- Demographics according to Country, Networks and Ads  shown in this section-->
   <section>
-    <div class="country-networks-ads parent">
+    <div class="country-networks-ads parent flex-row">
       <div class="country child">
-        <div class="heading-subheading-icon">
+        <div class="heading-subheading-icon flex-row">
           <div class="">
             <h3 class="heading">Visit by country</h3>
             <p class="heading-subheading">20 Countries share 97% visits</p>
@@ -368,7 +370,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -385,7 +387,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -402,7 +404,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -419,7 +421,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -436,7 +438,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -453,7 +455,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -472,7 +474,7 @@
       </div>
 
       <div class="networks child">
-        <div class="heading-subheading-icon">
+        <div class="heading-subheading-icon flex-row">
           <div class="number-label-subheader">
             <h3 class="number">1,276 <span class="uplabel"><i class="fa-regular fa-arrow-up"></i>2.2%</span></h3>
             <p class="subheader">Visits by social networks.</p>
@@ -483,7 +485,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -500,7 +502,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -517,7 +519,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -534,7 +536,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -551,7 +553,7 @@
           </div>
         </div>
 
-        <div class="table-like-structure">
+        <div class="table-like-structure flex-row">
           <div class="user-profile">
             <div class="">
               <img class="user-profile-pic" src="https://static.generated.photos/vue-static/home/feed/asian-woman.png" alt="pr">
@@ -585,14 +587,14 @@
 
   <!-- Average agent earning curve and Projects stats section -->
   <section>
-    <div class="agent-project parent">
+    <div class="agent-project parent flex-row">
       <div class="agent child">
 
       </div>
 
       <div class="project child">
 
-        <div class="heading-subheading-icon">
+        <div class="heading-subheading-icon flex-row">
           <div class="">
             <h3 class="auth">Projects Stats</h3>
             <p class="auth auth-key-01">Updated 22 minutes ago</p>
@@ -840,7 +842,7 @@
     </div>
   </section>
 
-  <footer class="parent">
+  <footer class="parent flex-row">
     <p class="">Designed by <span>Vivek Kumar</span></p>
     <div class="">
       <p>About</p>
@@ -856,14 +858,6 @@
 
 
 
-  <!-- Left Navigation Bar -->
-  <!-- <section id="left-bar">
-    <div class="left-navbar">
-      <div class="left-navbar-header">
-        <p><i class="fa-brands fa-korvue"></i> Keen</p>
-      </div>
-    </div>
-  </section> -->
 </body>
 
 </html>

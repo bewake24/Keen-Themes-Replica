@@ -1,0 +1,10 @@
+
+
+
+/* HACK: FLEX-ROW & FLEX COLUMN : for diffrent flex-direction */
+
+.flex-row{ /* Found in "header, parent, compaign, revenue, active, active-level-indicator, detailed-earnings, earning-sources, links-highlights, links-bar, author-bar,  author-data-attributes, heading-subheading-icon, table-like-structure "  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -5,23 +5,55 @@ body{
 }
 
 
+/* HACK: PARENT --> CHILD --> GRANDCHILD --> GREAT-GRANDCHILD */
+.parent{
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.child{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 16px;
+  flex-grow: 2;
+  margin: 10px;
+}
+.grandchild{
+  color: #181c32;
+  border-radius: 10px;
+  flex-grow: 2;
+  min-width: 300px;
+  padding: 10px;
+}
+
+
+/* HACK: FLEX-ROW & FLEX COLUMN : for diffrent flex-wraps*/
+
+.flex-row{ /* Found in "header, parent, compaign, active, active-level-indicator, detailed-earnings, earning-sources links-highlights, links-bar, author-bar,  author-data-attributes, heading-subheading-icon, table-like-structure "  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
 /* HACK: Top Navigation bar (Header) */
 header{
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
   height:70px;
-  justify-content: space-between;
   font-size: 16px;
   margin: 0;
   padding: 0 20px;
 }
 
+
+
+
+
+
 /* Hyperlinks in left of the navbar */
 .left-items{
   display: flex;
   flex-direction: row;
-  /* padding: 10px; */
   align-items: center;
 }
 
@@ -82,9 +114,6 @@ header{
 /* HACK: Compaign Selection Area */
 
 .compaign{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 10px 20px;
   margin: 0;
 }
@@ -95,22 +124,8 @@ header{
 
 /* HACK: Revenue dashboard of the author. */
 
-.revenue-author{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 20px;
-  gap: 20px;
-}
-
 .author{
   min-width: 520px;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 10px 0;
-  /* margin: 0 10px; */
-  flex-grow: 2;
 }
 
 .revenue{
@@ -118,12 +133,13 @@ header{
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: #f5f8fa;
   min-width: 520px;
-  border-radius: 10px;
-  padding: 0;
-  /* margin: 0 10px; */
   gap: 20px;
+  padding: 0;
+  border-radius: 10px;
   flex-grow: 2;
+  margin: 10px;
 }
 
 .active-earning{
@@ -140,10 +156,6 @@ header{
   flex-direction: column;
   justify-content: space-between;
   background-image: url("resources/active-projects.png");
-  padding: 10px;
-  border-radius: 10px;
-  min-width: 300px;
-  flex-grow: 2;
 }
 
 .active-numbers p{
@@ -162,9 +174,7 @@ header{
 }
 
 .active-level-indicator{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+
 }
 
 .active-level-indicator p{
@@ -188,16 +198,9 @@ header{
 
 .earning{
   background-color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  flex-grow: 2;
-  min-width: 300px;
 }
 
 .detailed-earnings{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -207,9 +210,6 @@ header{
 }
 
 .earning-sources{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
   flex-grow: 2;
 }
 
@@ -239,9 +239,6 @@ header{
 /* HACK: External Links Section */
 
 .links-highlights{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   gap: 20px;
   flex-grow: 2;
   flex-wrap: wrap;
@@ -250,16 +247,8 @@ header{
 .links{
   color: #181c32;
   background-color: #fff;
-  min-width: 300px;
-  border-radius: 10px;
-  padding: 10px;
-  flex-grow: 2;
 }
-
 .links-bar{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
 }
 
 .links-bar h3, .links-bar p{
@@ -276,9 +265,16 @@ header{
   border-bottom: 1px dashed #eff2f5;
 }
 
-
+.highlights{
+  background-color: #fff;
+}
 .highlights div p{
   color: #5e6278;
+}
+
+.highlights hr{
+  border: 1px solid #fff;
+  margin: 5px;
 }
 
 .highlights div p i{
@@ -292,17 +288,7 @@ header{
 
 
 
-.author-bar{
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  height:70px;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  margin: 0;
-  padding: 0 20px;
-}
+
 
 .auth{
   margin: 5px;
@@ -331,7 +317,6 @@ header{
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 20px;
 }
 
 .saas{
@@ -362,20 +347,12 @@ header{
 }
 
 .achievement-type-rest:hover{
-  /* border: solid;            for active
-  border-width: 1px 1px 5px 1px;
-  border-color: #e4e6ef #e4e6ef #3e97ff #e4e6ef; */
   color:  #3e97ff;
 }
 
 .author-data-attributes{
-  display: flex;
-  flex-direction: row;
-  /* padding: 10px; */
   align-items: center;
-  justify-content: space-between;
   margin: 0;
-  padding: 0 20px;
   border-bottom: 1px dashed #eff2f5;
 }
 
@@ -397,7 +374,6 @@ header{
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
   flex-grow: 4;
 }
 
@@ -427,23 +403,6 @@ header{
 
 /* HACK: Performance and Overview of authors performance overtime. */
 
-.performance-overview{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-.overview, .performance{
-  /* min-height: 500px; */
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  flex-grow: 2;
-}
 
  .heading-subheading-icon div button{
   background-color: #f5f8fa;
@@ -559,11 +518,6 @@ footer div p:hover{
 }
 
 
-/* footer div p{
-  margin: 0 20px;
-} */
-
-
 
 
 
@@ -585,41 +539,15 @@ footer div p:hover{
 
 
 /* HACK: Left Navigation Bar */
-.left-navbar{
-  width: 265px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #181c32;
-}
 
-.left-navbar-header{
-  word-spacing: 0;
-  height: 70px;
-  border-bottom: 1px dashed #33446c;
-  padding: 0 20px 0 20px;
-  min-height: auto;
-  min-width: auto;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+
+.content-area-wtih-left-navbar{
   display: flex;
-  transform: none;
-  transition: all 0s ease 0s;
-  background-color: grey;
+  flex-direction: row;
 }
-
-.left-navbar-header p{
-  vertical-align: middle;
-  color: white;
-  font-size: 13px;
-  line-height: 19.5px;
-  text-decoration: none solid rgb(24, 28, 50);
+.content-area{
+  flex-grow: 2;
 }
-
 
 
 
@@ -633,9 +561,6 @@ footer div p:hover{
 /* 1.)  Tempelate for navbar in small cards: Author-bar, earning-bar, author-achievement, performance-overview, performance */
 .heading-subheading-icon{
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   font-size: 16px;
   margin-bottom: 16px;
@@ -731,10 +656,7 @@ footer div p:hover{
     /* Used in Authors achievements, visit by country, visit by social networks and projects stats. */
 
 .table-like-structure{
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   margin: 0;
   border-bottom: 1px dashed #eff2f5;
 }
@@ -743,7 +665,6 @@ footer div p:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
   flex-grow: 4;
 }
 
@@ -762,29 +683,4 @@ footer div p:hover{
 .user-location{
   color: #b5b5c3;
   font-size: 12px;
-}
-
-
-
-
-
-
-
-
-/* PARENT --> CHILD --> GRANDCHILD --> GREAT-GRANDCHILD */
-.parent{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-.child{
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 8px 16px;
-  flex-grow: 2;
 }
