@@ -56,7 +56,7 @@ header{
   margin-left: 20px;
 }
 
-.country{
+.country-icon{
   width: 20px;
   height: 20px;
   background-color: #3e97ff;
@@ -192,33 +192,6 @@ header{
   padding: 10px;
   flex-grow: 2;
   min-width: 300px;
-}
-
-.monthly-earnings{
-  color: #000;
-  align-items: center;
-}
-
-.monthly-earnings p{
-  color: #b5b5c3;
-  margin: 5px;
-}
-
-.monthly-earnings h1{
-  font-size: 32px;
-  font-weight: 600;
-  margin: 5px 0;
-}
-
-.monthly-earnings h1 span{
-  font-size: 16px;
-  font-weight: 600;
-  padding: 5px;
-  margin: 5px 0;
-  color: #50cd89;
-  background-color: #E8FFF3;
-  align-items: center;
-  border-radius: 5px;
 }
 
 .detailed-earnings{
@@ -401,6 +374,9 @@ header{
   /* padding: 10px; */
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  padding: 0 20px;
+  border-bottom: 1px dashed #eff2f5;
 }
 
 .attributes-name p{
@@ -443,13 +419,6 @@ header{
   width: 80px;
   height: 40px;
 }
-
-.author-data-attributes{
-  margin: 0;
-  padding: 0 20px;
-  border-bottom: 1px dashed #eff2f5;
-}
-
 .auth-location{
   color: #b5b5c3;
   font-size: 12px;
@@ -469,7 +438,7 @@ header{
 }
 
 .overview, .performance{
-  min-height: 500px;
+  /* min-height: 500px; */
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
@@ -487,6 +456,86 @@ header{
 }
 
 
+/* HACK: Demographics according to Country, Networks and Ads  shown in this section */
+.country-networks-ads{
+  flex-wrap: wrap;
+}
+
+.number-label p{
+  color: #181c32;
+  font-weight: 500;
+}
+
+.ads{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("resources/ads-background.png");
+  background-size: 100% 100%; /* Helps in adding background image without repeating.  */
+}
+
+.ads-header {
+  text-align: center;
+}
+.ads-header h3{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.ads-header h3 span{
+  color: #50cd89;
+  text-decoration: underline;
+  text-decoration-color: #50cd89;
+  cursor: pointer;
+  transform: none;
+  transition: color 0.2 ease 0s;
+}
+
+.ads-header  button{
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: green;
+}
+
+.ads-image{
+  display: flex;
+  justify-content: center;
+}
+
+.ads-image img{
+  width: auto;
+  height: 220px;
+  border-radius: 10px;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+}
+table thead tr th{
+  color: #b5b5c3;
+  font-size: 16px;
+  font-weight: 600;
+}
+table thead tr th:first-child{
+  text-align: left;
+}
+table thead tr th:last-child{
+  text-align: right;
+}
+table tbody tr td{
+  border-bottom: 1px dashed #eff2f5;
+}
+table tbody tr td:first-child{
+  text-align: left;
+}
+table tbody tr td:last-child{
+  text-align: right;
+}
 
 
 
@@ -494,11 +543,25 @@ header{
 
 
 
+footer{
+  background-color: #fff;
+  min-height: 60px;
+  align-items: center;
+}
+
+footer div{
+  display: flex;
+  gap: 20px;
+}
+
+footer div p:hover{
+  color: #3e97ff;
+}
 
 
-
-
-
+/* footer div p{
+  margin: 0 20px;
+} */
 
 
 
@@ -563,7 +626,7 @@ header{
 
 
 
-/* /* HACK: CSS tempelates for this website. */
+/* HACK: CSS tempelates for this website. */
 
 
 
@@ -572,11 +635,10 @@ header{
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  height:70px;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  margin: 0;
+  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -601,3 +663,128 @@ header{
 
 
 /* 2.) Number Label and subheader */
+    /* Used in monthly-earnings, performance-overview, social-networks, avg-agent-earnings */
+
+
+.number-label-subheader{
+  color: #000;
+  align-items: center;
+}
+
+.subheader{
+  color: #b5b5c3;
+  margin: 5px;
+}
+
+.number{
+  font-size: 48px;
+  font-weight: 600;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.uplabel, .status-completed{ /*This label Icon is also used in social-networks, country-visits, and project-stats  */
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #50cd89;
+  background-color: #E8FFF3;
+  border-radius: 5px;
+}
+
+.downlabel{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #f1416c;
+  background-color: #fff5f8;
+  border-radius: 5px;
+}
+
+.status-process{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #3e97ff;
+  background-color: #eef6ff;
+  border-radius: 5px;
+}
+
+.status-hold{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+  color: #ffc700;
+  background-color: #fff8dd;
+  border-radius: 5px;
+}
+
+
+
+
+/* 3.) Table like structure pic-name-location label  */
+    /* Used in Authors achievements, visit by country, visit by social networks and projects stats. */
+
+.table-like-structure{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px dashed #eff2f5;
+}
+
+.user-profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-grow: 4;
+}
+
+.user-profile-pic{
+  width: 40px;
+  height: 40px;
+  background-color: #3e97ff;
+  border-radius: 5px;
+  margin-right: 7px;
+}
+
+.user-name{
+  margin: 5px;
+}
+
+.user-location{
+  color: #b5b5c3;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* PARENT --> CHILD --> GRANDCHILD --> GREAT-GRANDCHILD */
+.parent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.child{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 16px;
+  flex-grow: 2;
+}
