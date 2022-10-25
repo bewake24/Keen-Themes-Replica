@@ -27,13 +27,11 @@ body{
 
 
 /* HACK: FLEX-ROW & FLEX COLUMN : for diffrent flex-wraps*/
-
-.flex-row{ /* Found in "header, parent, compaign, active, active-level-indicator, detailed-earnings, earning-sources links-highlights, links-bar, author-bar,  author-data-attributes, heading-subheading-icon, table-like-structure "  */
+.flex-row{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 
 /* HACK: Top Navigation bar (Header) */
@@ -46,24 +44,18 @@ header{
 }
 
 
-
-
-
-
 /* Hyperlinks in left of the navbar */
 .left-items{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .left-items p{
   margin-right: 20px;
   color:  #3f5254;
   padding: 10px 13px;
   border-radius: 10px;
 }
-
 .left-items p:hover, .dashboard{
   margin-right: 20px;
   color: #3e97ff;  /* font color of .dashboard class is not changing?????*/
@@ -79,7 +71,6 @@ header{
   padding: 10px;
   align-items: center;
 }
-
 .right-items img{
   width: 40px;
   height: 40px;
@@ -87,7 +78,6 @@ header{
   border-radius: 5px;
   margin-left: 20px;
 }
-
 .country-icon{
   width: 20px;
   height: 20px;
@@ -95,14 +85,12 @@ header{
   border-radius: 5px;
   margin-left: 20px;
 }
-
 .right-items p{
   margin-right: 20px;
   color:  #3f5254;
   padding: 10px 13px;
   border-radius: 10px;
 }
-
 .right-items p:hover{
   margin-right: 20px;
   color: #3e97ff;
@@ -112,22 +100,19 @@ header{
 }
 
 /* HACK: Compaign Selection Area */
-
 .compaign{
   padding: 10px 20px;
   margin: 0;
 }
-
 .default h3, .default p{
   margin: 0;
 }
 
-/* HACK: Revenue dashboard of the author. */
 
+/* HACK: Revenue dashboard of the author. */
 .author{
   min-width: 520px;
 }
-
 .revenue{
   display: flex;
   flex-direction: column;
@@ -141,7 +126,6 @@ header{
   flex-grow: 2;
   margin: 10px;
 }
-
 .active-earning{
   display: flex;
   flex-direction: row;
@@ -150,86 +134,66 @@ header{
   gap: 20px;
   flex-grow: 2;
 }
-
 .active{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url("resources/active-projects.png");
 }
-
 .active-numbers p{
   color: #fff;
   margin: 5px;
 }
-
 .numbers{
   font-size: 30px;
   font-weight: bold;
   margin: 5px;
 }
-
 .active-level{
   margin-bottom: 5px;
 }
-
-.active-level-indicator{
-
-}
-
 .active-level-indicator p{
   color: #fff;
 }
-
 .full-indicator{
   width: 100%;
   height: 8px;
   background-color: #5061ff;
   border-radius: 20px;
 }
-
 .indicator{
   width: 72%;
   height: 8px;
   background-color: #fff;
   border-radius: 20px;
 }
-
-
 .earning{
   background-color: #fff;
 }
-
 .detailed-earnings{
   align-items: center;
   flex-wrap: wrap;
 }
-
 .detailed-earning-sources{
   flex-grow: 3;
 }
-
 .earning-sources{
   flex-grow: 2;
 }
-
 .earning-sources p span{
   color: #5e6278;
   font-weight: 600;
 }
-
 .fa-icon-2{
   color: #50cd89;
   margin-right: 5px;
   flex-grow: 2;
 }
-
 .fa-icon-3{
   color: #3e97ff;
   margin-right: 5px;
   flex-grow: 2;
 }
-
 .fa-icon-4{
   color: #e4e6ef;
   margin-right: 5px;
@@ -237,30 +201,22 @@ header{
 }
 
 /* HACK: External Links Section */
-
 .links-highlights{
   gap: 20px;
   flex-grow: 2;
   flex-wrap: wrap;
 }
-
 .links{
   color: #181c32;
   background-color: #fff;
 }
-.links-bar{
-}
-
 .links-bar h3, .links-bar p{
   margin: 5px;
 }
-
 .links hr{
   border: 1px solid #fff;
   margin: 5px;
 }
-
-
 .hyperlinks{
   border-bottom: 1px dashed #eff2f5;
 }
@@ -276,20 +232,9 @@ header{
   border: 1px solid #fff;
   margin: 5px;
 }
-
 .highlights div p i{
   color: #181c32;
 }
-
-
-
-
-
-
-
-
-
-
 .auth{
   margin: 5px;
 }
@@ -299,12 +244,11 @@ header{
 }
 
 .font-icon{
-  color: b5b5c3;
+  color: #b5b5c3;
   padding: 5px;
   border-radius: 5px;
   background-color: #f5f8fa;
 }
-
 .font-icon:hover{
   color: #fff;
   padding: 5px;
@@ -318,7 +262,6 @@ header{
   flex-wrap: wrap;
   margin: 0;
 }
-
 .saas{
   border: solid;
   border-width: 1px 1px 5px 1px;
@@ -329,11 +272,9 @@ header{
   margin-right: 10px;
   color:  #3e97ff;
 }
-
 .saas h4, .saas h1{
   margin: 5px;
 }
-
 .achievement-type-rest{
   border: 1px dashed #e4e6ef;
   border-radius: 10px;
@@ -341,21 +282,17 @@ header{
   text-align: center;
   margin-right: 10px;
 }
-
 .achievement-type-rest h4, .achievement-type-rest h1{
   margin: 5px;
 }
-
 .achievement-type-rest:hover{
   color:  #3e97ff;
 }
-
 .author-data-attributes{
   align-items: center;
   margin: 0;
   border-bottom: 1px dashed #eff2f5;
 }
-
 .attributes-name p{
   color: #b5b5c3;
 }
@@ -376,7 +313,6 @@ header{
   align-items: center;
   flex-grow: 4;
 }
-
 .author-profile-pic{
   width: 40px;
   height: 40px;
@@ -384,7 +320,6 @@ header{
   border-radius: 5px;
   margin-right: 7px;
 }
-
 .author-conv{
   flex-grow: 3;
 }
@@ -402,8 +337,6 @@ header{
 
 
 /* HACK: Performance and Overview of authors performance overtime. */
-
-
  .heading-subheading-icon div button{
   background-color: #f5f8fa;
   border: 0;
@@ -419,12 +352,10 @@ header{
 .country-networks-ads{
   flex-wrap: wrap;
 }
-
 .number-label p{
   color: #181c32;
   font-weight: 500;
 }
-
 .ads{
   display: flex;
   flex-direction: column;
@@ -432,7 +363,6 @@ header{
   background-image: url("resources/ads-background.png");
   background-size: 100% 100%; /* Helps in adding background image without repeating.  */
 }
-
 .ads-header {
   text-align: center;
 }
@@ -442,7 +372,6 @@ header{
   margin: 5px 0;
   color: #fff;
 }
-
 .ads-header h3 span{
   color: #50cd89;
   text-decoration: underline;
@@ -451,7 +380,6 @@ header{
   transform: none;
   transition: color 0.2 ease 0s;
 }
-
 .ads-header  button{
   color: #fff;
   border: 0;
@@ -459,17 +387,17 @@ header{
   padding: 5px 10px;
   background-color: green;
 }
-
 .ads-image{
   display: flex;
   justify-content: center;
 }
-
 .ads-image img{
   width: auto;
   height: 220px;
   border-radius: 10px;
 }
+
+
 
 table{
   text-align: center;
@@ -497,65 +425,21 @@ table tbody tr td:last-child{
 }
 
 
-
-
-
-
-
 footer{
   background-color: #fff;
   min-height: 60px;
   align-items: center;
 }
-
 footer div{
   display: flex;
   gap: 20px;
 }
-
 footer div p:hover{
   color: #3e97ff;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* HACK: Left Navigation Bar */
-
-
-.content-area-wtih-left-navbar{
-  display: flex;
-  flex-direction: row;
-}
-.content-area{
-  flex-grow: 2;
-}
-
-
-
-
-
-
 /* HACK: CSS tempelates for this website. */
-
 
 
 /* 1.)  Tempelate for navbar in small cards: Author-bar, earning-bar, author-achievement, performance-overview, performance */
@@ -566,17 +450,13 @@ footer div p:hover{
   margin-bottom: 16px;
   padding: 0;
 }
-
-
 .heading{
   margin: 5px;
 }
-
 .heading-subheading{
   color: #b5b5c3;
   margin: 5px;
 }
-
 .font-icon{
   color: #b5b5c3;
   padding: 5px;
@@ -585,22 +465,16 @@ footer div p:hover{
 }
 
 
-
-
 /* 2.) Number Label and subheader */
     /* Used in monthly-earnings, performance-overview, social-networks, avg-agent-earnings */
-
-
 .number-label-subheader{
   color: #000;
   align-items: center;
 }
-
 .subheader{
   color: #b5b5c3;
   margin: 5px;
 }
-
 .number{
   font-size: 48px;
   font-weight: 600;
@@ -608,7 +482,6 @@ footer div p:hover{
   display: flex;
   align-items: center;
 }
-
 .uplabel, .status-completed{ /*This label Icon is also used in social-networks, country-visits, and project-stats  */
   font-size: 16px;
   font-weight: 600;
@@ -618,7 +491,6 @@ footer div p:hover{
   background-color: #E8FFF3;
   border-radius: 5px;
 }
-
 .downlabel{
   font-size: 16px;
   font-weight: 600;
@@ -628,7 +500,6 @@ footer div p:hover{
   background-color: #fff5f8;
   border-radius: 5px;
 }
-
 .status-process{
   font-size: 16px;
   font-weight: 600;
@@ -638,7 +509,6 @@ footer div p:hover{
   background-color: #eef6ff;
   border-radius: 5px;
 }
-
 .status-hold{
   font-size: 16px;
   font-weight: 600;
@@ -650,24 +520,19 @@ footer div p:hover{
 }
 
 
-
-
 /* 3.) Table like structure pic-name-location label  */
     /* Used in Authors achievements, visit by country, visit by social networks and projects stats. */
-
 .table-like-structure{
   align-items: center;
   margin: 0;
   border-bottom: 1px dashed #eff2f5;
 }
-
 .user-profile{
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-grow: 4;
 }
-
 .user-profile-pic{
   width: 40px;
   height: 40px;
@@ -675,11 +540,9 @@ footer div p:hover{
   border-radius: 5px;
   margin-right: 7px;
 }
-
 .user-name{
   margin: 5px;
 }
-
 .user-location{
   color: #b5b5c3;
   font-size: 12px;
